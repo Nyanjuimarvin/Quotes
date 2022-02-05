@@ -1,0 +1,92 @@
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.quote {
+  background-color: #33a820;
+  border-radius: 20px;
+  font-family: inter;
+  max-width: 330px;
+}
+
+.userwhat {
+  margin-top: -10px;
+}
+
+.deletebtn {
+  padding: 0px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  margin-top: -16px;
+}
+
+.deleteicon {
+  object-fit: contain;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url(../../assets/userpain.png);
+  background-size: cover;
+}
+
+.downcount {
+  margin-left: -54px;
+  color: #e5e5e5;
+  background-color: #ff2226;
+}
+
+.upcount {
+  margin-left: -54px;
+  color: #e5e5e5;
+  background-color: #ff4500;
+}
+
+.upbtn {
+  cursor: pointer;
+  background-color: #ff4500;
+}
+
+.downbtn {
+  cursor: pointer;
+  background-color: #ff2226;
+}
+
+.detailbtn {
+  background-color: #0000ff;
+  color: #ffff;
+  border: none;
+  border-radius: 5px;
+}
+
+.upbtn:active {
+  background-color: #ffff;
+  box-shadow: 0 5px rgb(128, 128, 128);
+  transform: translateY(-9px);
+}
+
+.downbtn:active {
+  background-color: #ffff;
+  box-shadow: 0 5px rgb(128, 128, 128);
+  transform: translateY(9px);
+}
+
+.detailbtn:active {
+  box-shadow: 0 5px rgb(128, 128, 128);
+  transform: translateY(4px);
+}
+
+.form {
+  background-color: #ff4500;
+  padding: 20px;
+  border-radius: 12px;
+}
