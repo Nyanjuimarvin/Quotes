@@ -34,10 +34,6 @@
   object-fit: contain;
 }
 
-.buttons {
-  display: flex;
-  justify-content: space-between;
-}
 
 .profile {
   width: 40px;
@@ -47,46 +43,15 @@
   background-size: cover;
 }
 
-.downcount {
-  margin-left: -54px;
-  color: #e5e5e5;
-  background-color: #ff2226;
-}
-
-.upcount {
-  margin-left: -54px;
-  color: #e5e5e5;
-  background-color: #ff4500;
-}
-
-.upbtn {
-  cursor: pointer;
-  background-color: #ff4500;
-}
-
-.downbtn {
-  cursor: pointer;
-  background-color: #ff2226;
-}
 
 .detailbtn {
   background-color: #0000ff;
   color: #ffff;
   border: none;
   border-radius: 5px;
+  height: 36px;
 }
 
-.upbtn:active {
-  background-color: #ffff;
-  box-shadow: 0 5px rgb(128, 128, 128);
-  transform: translateY(-9px);
-}
-
-.downbtn:active {
-  background-color: #ffff;
-  box-shadow: 0 5px rgb(128, 128, 128);
-  transform: translateY(9px);
-}
 
 .detailbtn:active {
   box-shadow: 0 5px rgb(128, 128, 128);

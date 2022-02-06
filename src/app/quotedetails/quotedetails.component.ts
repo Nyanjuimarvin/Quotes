@@ -8,6 +8,7 @@ import { Quotes } from '../Classes/quotes';
 })
 export class QuotedetailsComponent implements OnInit {
 
+  
   constructor() { }
 
   ngOnInit(): void {

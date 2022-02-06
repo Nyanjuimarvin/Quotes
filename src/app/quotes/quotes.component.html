@@ -21,20 +21,17 @@
         </div>
         <p class="ms-4 mt-2 text-white">{{quote.quote}}</p>
 
-        <p class="text-end me-3 author"><em><strong> -{{quote.author}} </strong></em></p>
 
-        <div class="buttons">
-          <button class="border-0 upbtn rounded-start pe-1" (click)="plusUp(i)"><i class="fa fa-chevron-up"
-              aria-hidden="true"></i></button>
-          <span class="border-0 p-2 upcount rounded-end">{{quote.upvoteCount}}</span>
-          <button class="border-0 downbtn rounded-start" (click)="plusDown(i)"><i class="fa fa-chevron-down"
-              aria-hidden="true"></i></button>
-          <span class="border-0 p-2 downcount rounded-end">{{quote.downvoteCount}}</span>
-          <button class="detailbtn">Details</button>
 
-        </div>
 
+        <button class="detailbtn">Details</button>
+
+      <ng-container>
+        <app-quotedetails></app-quotedetails>
+      </ng-container>
+      
         <p class="text-white mt-4">{{quote.timePosted()}}</p>
+
       </div>
     </ng-container>
   </div>
