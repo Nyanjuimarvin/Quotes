@@ -84,9 +84,3 @@
   box-shadow: 0 5px rgb(128, 128, 128);
   transform: translateY(4px);
 }
-
-.form {
-  background-color: #ff4500;
-  padding: 20px;
-  border-radius: 12px;
-}

@@ -1,29 +1,33 @@
 <p>quotes works!</p>
-<div class="col-md-4">
-    <div class="quote p-3 mt-5">
-  
-      <div class="top p-2">
-        <div class="profile me-2"></div>
-        <span class="pt-3 userwhat fs-5 text-decoration-underline">Marvin</span>
-  
-        <button class="btn btn-outline-danger rounded-circle deletebtn"><em
-            class="fa fa-times-circle deleteicon fs-6"></em></button>
+<div class="container" *ngFor="let quote of quotes; let i = index">
+  <div *ngIf="i <= 2" class="row">
+    <div class="col-md-4">
+      <div class="quote p-3 mt-5">
+
+        <div class="top p-2">
+          <div class="profile me-2"></div>
+          <span class="pt-3 userwhat fs-5 text-decoration-underline">{{quote.posterName}}</span>
+
+          <button class="btn btn-outline-danger rounded-circle deletebtn"><em
+              class="fa fa-times-circle deleteicon fs-6"></em></button>
+        </div>
+        <p class="ms-4 mt-2 text-white">{{quote.quote}}</p>
+
+        <p class="text-end me-3 author"><strong> -{{quote.author}} </strong></p>
+
+        <div class="buttons">
+          <button class="border-0 upbtn rounded-start pe-1" (click)="plusUp(i)"><i class="fa fa-chevron-up"
+              aria-hidden="true"></i></button>
+          <span class="border-0 p-2 upcount rounded-end">{{quote.upvoteCount}}</span>
+          <button class="border-0 downbtn rounded-start" (click)="plusDown(i)"><i class="fa fa-chevron-down"
+              aria-hidden="true"></i></button>
+          <span class="border-0 p-2 downcount rounded-end">{{quote.downvoteCount}}</span>
+          <button class="detailbtn">Details</button>
+
+        </div>
+
+        <p class="text-white mt-4">Some minutes ago</p>
       </div>
-      <p class="ms-4 mt-2 text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-        accusantium
-        nulla ex vero eum voluptatem iste accusamus culpa dolores ad fugit est et, itaque deleniti,
-        quaerat necessitatibus cupiditate temporibus tenetur.</p>
-  
-      <p class="text-end me-3 author"><strong> -Robert Oppenheimer </strong></p>
-  
-      <div class="buttons">
-        <button class="border-0 upbtn rounded-start pe-1"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
-        <span class="border-0 p-2 upcount rounded-end">0</span>
-        <button class="border-0 downbtn rounded-start"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
-        <span class="border-0 p-2 downcount rounded-end">0</span>
-        <button class="detailbtn">Details</button>
-      </div>
-  
-      <p class="text-white mt-4">Some minutes ago</p>
     </div>
   </div>
+</div>
