@@ -24,9 +24,9 @@
 
 
 
-        <button class="detailbtn">Details</button>
+        <button class="detailbtn" (click)="showDetails(i)">Details</button>
 
-      <ng-container>
+      <ng-container *ngIf="quote.isDetailsShown">
         <app-quotedetails [quotedetail]="quote"></app-quotedetails>
       </ng-container>
       
