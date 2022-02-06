@@ -11,16 +11,29 @@ import { Quotes } from '../Classes/quotes';
 
 export class QuotesComponent implements OnInit {
 
-  quotes:Quotes[] = [
-    new Quotes("Marvin","Novik","They are Rage, Brutal, without Mercy. But you, you will be Worse. RIP AND TEAR UNTIL ITS DONE!!!","ligma"),
-    
+  quotes: Quotes[] = [
+    new Quotes("Marvin", "Novik", "They are Rage, Brutal, without Mercy. But you, you will be Worse. RIP AND TEAR UNTIL ITS DONE!!!", "ligma"),
+
   ];
 
 
 
   //Show/hide
-  showDetails(index:number){
+  showDetails(index: number) {
     this.quotes[index].isDetailsShown = !this.quotes[index].isDetailsShown;
+  }
+
+
+  //Delete Quotes
+  deleteQuote(deleteValue: boolean, index: number) {
+    if (deleteValue) {
+
+      let sure = confirm(`Do you really want to delete this quote by ${this.quotes[index].posterName} ?`);
+      
+      if (sure) {
+        this.quotes.splice(index, 1);
+      }
+    }
   }
   constructor() { }
 

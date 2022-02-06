@@ -16,7 +16,7 @@
           <div class="profile me-2"></div>
           <span class="pt-3 userwhat fs-5">{{quote.posterName}}</span>
 
-          <app-deletequote></app-deletequote>
+          <app-deletequote (deleteAny)="deleteQuote($event,i)"></app-deletequote>
         </div>
         <p class="ms-4 mt-2 text-white">{{quote.quote}}</p>
 
