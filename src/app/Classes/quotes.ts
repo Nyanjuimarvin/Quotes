@@ -5,10 +5,7 @@ export class Quotes {
         public quote: string,
         public upvoteCount: number = 0,
         public downvoteCount: number = 0,
-        public isDetailsShown: boolean = false
+        public isDetailsShown: boolean = false,
+        public datePosted?:Date
     ) { }
-
-    timePosted() {
-        return new Date();
-    }
 }

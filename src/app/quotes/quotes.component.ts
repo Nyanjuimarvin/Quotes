@@ -12,8 +12,7 @@ import { Quotes } from '../Classes/quotes';
 export class QuotesComponent implements OnInit {
 
   quotes: Quotes[] = [
-    new Quotes("Marvin", "Novik", "They are Rage, Brutal, without Mercy. But you, you will be Worse. RIP AND TEAR UNTIL ITS DONE!!!"),
-
+    new Quotes("Heike Monogatari","Marvin","The sound of the Gion Shōja bells echoes the impermanence of all things; the color of the sāla flowers reveals the truth that the prosperous must decline. The proud do not endure, they are like a dream on a spring night; the mighty fall at last, they are as dust before the wind."),
   ];
 
 
@@ -40,6 +39,15 @@ export class QuotesComponent implements OnInit {
   addQuotes(user:any){
     this.quotes.push(user);
   }
+
+  highlightQuote(index:number):any{
+    let max = 1;
+    if(this.quotes[index].upvoteCount > max){
+      return this.quotes[index];
+    }
+
+  }
+
   constructor() { }
 
   ngOnInit(): void {
