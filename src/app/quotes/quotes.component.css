@@ -3,11 +3,19 @@
   justify-content: space-between;
 }
 
+.quotesdiv{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
 .quote {
   background-color: #33a820;
   border-radius: 20px;
   font-family: inter;
   max-width: 330px;
+  /* margin-right: 30px; */
 }
 
 .userwhat {
