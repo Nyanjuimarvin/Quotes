@@ -27,7 +27,7 @@
         <button class="detailbtn">Details</button>
 
       <ng-container>
-        <app-quotedetails></app-quotedetails>
+        <app-quotedetails [quotedetail]="quote"></app-quotedetails>
       </ng-container>
       
         <p class="text-white mt-4">{{quote.timePosted()}}</p>

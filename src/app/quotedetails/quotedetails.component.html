@@ -1,7 +1,7 @@
-<button class="border-0 upbtn rounded-start pe-1" ><i class="fa fa-chevron-up"
+<button class="border-0 upbtn rounded-start pe-1" (click)="plusUp()"><i class="fa fa-chevron-up"
     aria-hidden="true"></i></button>
-<span class="border-0 p-2 upcount rounded-end">0</span>
-<button class="border-0 downbtn rounded-start"><i class="fa fa-chevron-down"
+<span class="border-0 p-2 upcount rounded-end">{{quotedetail.upvoteCount}}</span>
+<button class="border-0 downbtn rounded-start" (click)="plusDown()"><i class="fa fa-chevron-down"
     aria-hidden="true"></i></button>
-<span class="border-0 p-2 downcount rounded-end">0</span>
-<p class="text-end me-2 pt-2 author"><em><strong> Quote Author: </strong></em></p>
+<span class="border-0 p-2 downcount rounded-end">{{quotedetail.downvoteCount}}</span>
+<p class="text-end me-2 pt-2 author"><em><strong> Quote Author:{{quotedetail.author}} </strong></em></p>
