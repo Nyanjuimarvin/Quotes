@@ -13,8 +13,14 @@ export class QuoteformComponent implements OnInit {
 
   //Submit form 
   submitForm() {
-    this.userSubmit.emit(this.userQuote);
+    while (this.userQuote.author && this.userQuote.posterName && this.userQuote.quote) {
+      this.userSubmit.emit(this.userQuote);
+      //Try assigning a new instance
+      this.userQuote = new Quotes("", "", "");
+    }
   }
+
+
 
   constructor() { }
 
