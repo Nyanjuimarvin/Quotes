@@ -7,8 +7,6 @@ import * as moment from 'moment';
 export class TimesincePipe implements PipeTransform {
 
   transform(value: any): any {
-    
     return moment(value).fromNow();
-  
   }
 }
