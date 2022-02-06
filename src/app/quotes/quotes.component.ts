@@ -12,7 +12,7 @@ import { Quotes } from '../Classes/quotes';
 export class QuotesComponent implements OnInit {
 
   quotes: Quotes[] = [
-    new Quotes("Marvin", "Novik", "They are Rage, Brutal, without Mercy. But you, you will be Worse. RIP AND TEAR UNTIL ITS DONE!!!", "ligma"),
+    new Quotes("Marvin", "Novik", "They are Rage, Brutal, without Mercy. But you, you will be Worse. RIP AND TEAR UNTIL ITS DONE!!!"),
 
   ];
 
@@ -34,6 +34,11 @@ export class QuotesComponent implements OnInit {
         this.quotes.splice(index, 1);
       }
     }
+  }
+
+  //Add quotes to array
+  addQuotes(user:any){
+    this.quotes.push(user);
   }
   constructor() { }
 
